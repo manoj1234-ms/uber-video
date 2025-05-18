@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "name": "uber-clone",
+  "version": "1.0.0",
+  "main": "index.js",
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "frontend": "cd Frontend && npm run dev",
+  "backend": "cd Backend && npm run start",
+  "uber": "concurrently -n \"frontend,backend\" -c \"bgBlue,bgYellow\" \"npm run frontend\" \"npm run backend\""
+},
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
